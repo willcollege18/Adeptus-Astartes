@@ -11,6 +11,7 @@
         <h1>Game Sidebar</h1>
         <!-- Add sidebar content here -->
     </div>
+    styles.css
     /* Styles for Strategy Game Interface */
 
 /* Sidebar Styling */
@@ -65,9 +66,70 @@
     border-radius: 5px;
     display: none;
 }
+    'use strict';
+
+class Game {
+    constructor() {
+        this.state = {};
+        this.players = [];
+    }
+
+    start() {
+        console.log('Game started!');
+        // Initialize game state, players, etc.
+    }
+
+    addPlayer(player) {
+        this.players.push(player);
+        console.log(`Player ${player} added.`);
+    }
+
+    updateState(newState) {
+        this.state = { ...this.state, ...newState };
+        console.log('Game state updated:', this.state);
+    }
+
+    endGame() {
+        console.log('Game ended! Final state:', this.state);
+    }
+}
+
+// Export the Game class for external use
+module.exports = Game;
+
     <div id="star-map">
         <h1>Star Map</h1>
-        <!-- Add star map content here -->
+        <!-- Add star map content here -->'use strict';
+
+class Game {
+    constructor() {
+        this.state = {};
+        this.players = [];
+    }
+
+    start() {
+        console.log('Game started!');
+        // Initialize game state, players, etc.
+    }
+
+    addPlayer(player) {
+        this.players.push(player);
+        console.log(`Player ${player} added.`);
+    }
+
+    updateState(newState) {
+        this.state = { ...this.state, ...newState };
+        console.log('Game state updated:', this.state);
+    }
+
+    endGame() {
+        console.log('Game ended! Final state:', this.state);
+    }
+}
+
+// Export the Game class for external use
+module.exports = Game;
+
     </div>
     <script src="game.js"></script>
 </body>
